@@ -1,5 +1,3 @@
-
-
 # stock_movements_prediction
 The Stock Movement Prediction Project analyzes Reddit sentiment to forecast stock trends. Using BERT for sentiment analysis and machine learning models, it predicts stock movements from social discussions, helping investors make informed decisions.
 
@@ -21,10 +19,10 @@ This project uses Reddit data and historical stock information to predict stock 
 
 1. Clone the repository:
    
-   git clone: https://github.com/S12345-12345/stock_movements_prediction.git
+   git clone https://github.com/S12345-12345/stock_movements_prediction.git
    
 
-Create a virtual environment (optional but recommended):
+2. Create a virtual environment (optional but recommended):
    
    python -m venv venv
    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
@@ -45,7 +43,8 @@ The main dependencies for this project are:
 - torch
 - transformers
 - tqdm
-hese are all listed in the requirements.txt file and will be installed when you run the pip install command above.
+
+These are all listed in the requirements.txt file and will be installed when you run the pip install command above.
 
 ## Data
 
@@ -61,6 +60,7 @@ To run the stock prediction model:
    
    python main.py
    
+
 The script will perform the following steps:
 - Preprocess the Reddit data
 - Analyze sentiment of the Reddit posts
@@ -68,7 +68,6 @@ The script will perform the following steps:
 - Create features by merging Reddit and stock data
 - Train a BERT-based model to predict stock movements
 - Evaluate the model and print a classification report
-
 ## Customization
 
 - To predict for a different stock, change the stock symbol in the main() function where it calls get_stock_data('AAPL', ...).
@@ -84,8 +83,8 @@ The script will perform the following steps:
 
 - If you encounter a "CUDA out of memory" error, try reducing the batch size in the train_model() function.
 - If the code is running too slowly, consider using a subset of your data for initial testing by sampling the dataframe before passing it to the model.
-
 ## Contributing
+
 Feel free to fork this repository and submit pull requests with any enhancements.
 
 ## License
